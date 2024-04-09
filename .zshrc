@@ -1,4 +1,6 @@
 # Tools to install:
+# - bat
+# - thefuck
 # - zoxide
 
 # Set shell options.
@@ -16,5 +18,6 @@ autoload -Uz promptinit && promptinit
 prompt ${prompt_name:-pure}
 
 # Initialize tools.
-eval $(thefuck --alias)
+alias bat="batcat"
+eval "$(thefuck --alias)"
 eval "$(zoxide init --cmd cd zsh)"
