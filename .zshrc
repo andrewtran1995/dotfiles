@@ -1,4 +1,4 @@
-# Pre-requisite tools:
+# Tools to install:
 # - zoxide
 
 # Set shell options.
@@ -16,4 +16,5 @@ autoload -Uz promptinit && promptinit
 prompt ${prompt_name:-pure}
 
 # Initialize tools.
+eval $(thefuck --alias)
 eval "$(zoxide init --cmd cd zsh)"
