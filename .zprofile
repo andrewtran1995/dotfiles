@@ -1,5 +1,6 @@
 # Tools to install:
 # - bat
+# - eza
 # - thefuck
 # - zoxide
 
@@ -19,6 +20,7 @@ prompt ${prompt_name:-pure}
 
 # Initialize tools.
 alias bat="batcat" # Optional: Alias for Ubuntu.
-alias ls="ls --color=auto"
+alias ls="eza"
+alias ll="eza -hl"
 eval "$(thefuck --alias)"
 eval "$(zoxide init --cmd cd zsh)"
